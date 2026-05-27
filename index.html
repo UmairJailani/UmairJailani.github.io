@@ -3,190 +3,426 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfoliosss</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/portfolio.css" />
+    <title>Muhammad Umair Jailani — Front-End Developer</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- AOS Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="#HOME" class="active">Home</a>
-        <a href="#PROJECTS">Projects</a>
-        <a href="#TECHNOLOGIES">Technologies</a>
-        <a href="#CONTACT">Get In Touch</a>
-      </nav>
-    </header>
 
-    <section id="HOME">
-      <div class="bio">
-        <h1>Hi, I'm Umair,</h1>
-        <h2>A Front-end Developer</h2>
-        <p>
-          I am a passionate web developer with a keen eye for design and
-          a strong foundation in front-end and responsive development.
-        </p>
-        <a href="/Resume.pdf">
-          <button class="btn-17">
-            <span class="text-container">
-              <span class="text">Download Resume</span>
-            </span>
-          </button>
-        </a>
-        <!-- <button>Download</button> -->
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-brand">UJ<span>.</span></div>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
-      <div class="image-background"></div>
-      <div class="socials"></div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+      <div class="hero-bg-glow glow-1"></div>
+      <div class="hero-bg-glow glow-2"></div>
+
+      <div class="hero-content">
+        <p class="hero-greeting">👋 Hello, I'm</p>
+        <h1 class="hero-name">Muhammad Umair<br />Jailani</h1>
+        <h2 class="hero-title">
+          I'm a <span id="typed"></span>
+        </h2>
+        <p class="hero-desc">
+          Passionate front-end developer with a keen eye for design and a strong
+          foundation in building responsive, interactive digital experiences.
+        </p>
+        <div class="hero-buttons">
+          <a href="Resume.pdf" download class="btn btn-primary">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-paper-plane"></i> Let's Talk
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/UmairJailani" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/umairjailani" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:umairjailani47@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:+923365993438" aria-label="Phone">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="profile-ring">
+          <img src="Profile Pic.jpg" alt="Muhammad Umair Jailani" />
+        </div>
+        <div class="floating-badge badge-1">
+          <i class="fab fa-react"></i> React
+        </div>
+        <div class="floating-badge badge-2">
+          <i class="fab fa-js-square"></i> JavaScript
+        </div>
+        <div class="floating-badge badge-3">
+          <i class="fas fa-mobile-alt"></i> Mobile Dev
+        </div>
+      </div>
     </section>
 
-    <section id="PROJECTS">
-      <h3>Projects</h3>
-      <main>
-        <article>
-          <!-- Calculator -->
-          <a href="https://umairjailani.github.io/Calculator_Project/">
-            <img src="/cal_img.png" alt="" />
-          </a>
-        </article>
-        <article>
-          <!-- Drum Kit -->
-          <a href="https://umairjailani.github.io/Drum-on-keys/">
-            <img src="/DrumKey.png" alt="" />
-          </a>
-        </article>
-        <article>
-          <!-- Simon Game -->
-          <a href=" https://umairjailani.github.io/Simon-Game/">
-            <img src="/SimonGameSnap.png" alt="" />
-          </a>
-        </article>
-        <article>
-          <!-- To-Do List -->
-          <a href="https://umairjailani.github.io/ToDoList-Project/">
-            <img src="/todolist.png" alt="" />
-          </a>
-        </article>
-        <article>
-          <!-- To-Do List -->
-          <a href="https://umairjailani.github.io/Login_page/">
-            <img src="/loginsnap.png" alt="" />
-          </a>
-        </article>
-      </main>
-    </section>
-
-    <section id="TECHNOLOGIES">
-      <h2>Current Technologies</h2>
-      <p>
-        I'm proficient in a range of modern technologies that empower me to
-        build highly functional solutions.
-      </p>
-      <div class="technology-grid">
-        <div class="technology-card">
-          <img src="/html-icon.png" alt="CSS Icon" />
-          <div class="tech_detail">
-            <h3>HTML</h3>
-            <p>HyperText Markup Language</p>
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="about">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Who I Am</span>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-content" data-aos="fade-up" data-aos-delay="100">
+        <p>
+          I'm <strong>Muhammad Umair Jailani</strong>, a passionate front-end developer
+          based in Pakistan. I specialize in building beautiful, functional, and responsive
+          web and mobile applications.
+        </p>
+        <p>
+          With a strong foundation in <strong>HTML, CSS, JavaScript, and React</strong>,
+          I love turning creative ideas into real-world digital experiences. I'm also
+          expanding my skills into mobile development with <strong>React Native & Expo</strong>
+          and broadening my programming knowledge with <strong>Python</strong>.
+        </p>
+        <p>
+          When I'm not coding, I'm exploring new technologies, improving my design skills,
+          or working on personal projects that challenge me to grow as a developer.
+        </p>
+        <div class="about-stats">
+          <div class="stat" data-aos="zoom-in" data-aos-delay="200">
+            <span class="stat-number">7+</span>
+            <span class="stat-label">Projects Built</span>
           </div>
-        </div>
-        <div class="technology-card">
-          <img src="/CSS-ICON.png" alt="CSS Icon" />
-          <div class="tech_detail">
-            <h3>CSS</h3>
-            <p>Cascading Style Sheet</p>
+          <div class="stat" data-aos="zoom-in" data-aos-delay="300">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Technologies</span>
           </div>
-        </div>
-        <div class="technology-card">
-          <img src="/java-script-Icon.png" alt="" />
-          <div class="tech_detail">
-            <h3>JavaScript</h3>
-            <p>Front-End Development Language</p>
-          </div>
-        </div>
-        <div class="technology-card">
-          <img src="/bootstrap-icon.png" alt="Next.js Icon" />
-          <div class="tech_detail">
-            <h3>BootStrap</h3>
-            <p>HTML, CSS & JavaSCript Library</p>
-          </div>
-        </div>
-        <div class="technology-card">
-          <img
-            src="https://tailwindcss.com/favicons/android-chrome-192x192.png?v=3"
-            alt="Tailwind Icon"
-          />
-          <div class="tech_detail">
-            <h3>Tailwind</h3>
-            <p>CSS Framework</p>
-          </div>
-        </div>
-        <div class="technology-card">
-          <img src="/React-Icon.png" alt="" />
-          <div class="tech_detail">
-            <h3>React</h3>
-            <p>JavaScript Library</p>
-          </div>
-        </div>
-        <div class="technology-card">
-          <img src="/wordpress-icon.png" alt="Git Icon" />
-          <div class="tech_detail">
-            <h3>WordPress</h3>
-            <p>Content Management System</p>
-          </div>
-        </div>
-        <div class="technology-card">
-          <img src="/github-icon.png" alt="Git Icon" />
-          <div class="tech_detail">
-            <h3>GitHub</h3>
-            <p>Version Control Tool</p>
+          <div class="stat" data-aos="zoom-in" data-aos-delay="400">
+            <span class="stat-number">1+</span>
+            <span class="stat-label">Years Coding</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="CONTACT">
-      <h2>Get in Touch</h2>
-      <p>
-        Feel free to reach out to me directly via email or connect with me on
-        social media. I look forward to hearing from you!
-      </p>
-
-      <div class="contact-info">
-        <p>
-          <strong>Email:</strong>
-          <a href="mailto:your-email@example.com">umairjailani47@gmail.com</a>
-        </p>
-        <p>
-          <strong>Phone:</strong> <a href="tel:+1234567890">+92-336-5993438</a>
-        </p>
-        <p>
-          <strong>LinkedIn:</strong>
-          <a href="www.linkedin.com/in/umairjailani" target="_blank"
-            >linkedin.com/umairjailani</a
-          >
-        </p>
-        <p>
-          <strong>GitHub:</strong>
-          <a href="https://github.com/UmairJailani" target="_blank"
-            >github.com/UmairJailani</a
-          >
-        </p>
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="skills">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I Know</span>
+        <h2>Skills & Technologies</h2>
+        <p>I'm proficient in a range of modern technologies that empower me to build highly functional solutions.</p>
       </div>
-      <footer>
-        <a href="https://www.flaticon.com/free-icons/java" title="java icons"
-          >Java icons created by Pixel perfect - Flaticon</a
-        >
-      </footer>
+      <div class="skills-grid">
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="0">
+          <img src="html-icon.png" alt="HTML5" />
+          <h3>HTML5</h3>
+          <p>Markup Language</p>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="60">
+          <img src="CSS-ICON.png" alt="CSS3" />
+          <h3>CSS3</h3>
+          <p>Styling & Animations</p>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="120">
+          <img src="java-script-Icon.png" alt="JavaScript" />
+          <h3>JavaScript</h3>
+          <p>Front-End Language</p>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="180">
+          <img src="React-Icon.png" alt="React" />
+          <h3>React</h3>
+          <p>JS UI Library</p>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="240">
+          <img src="React-Icon.png" alt="React Native" />
+          <h3>React Native</h3>
+          <p>Mobile Development</p>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+          <img src="bootstrap-icon.png" alt="Bootstrap" />
+          <h3>Bootstrap</h3>
+          <p>CSS Framework</p>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="360">
+          <img src="https://tailwindcss.com/favicons/android-chrome-192x192.png?v=3" alt="Tailwind CSS" />
+          <h3>Tailwind CSS</h3>
+          <p>Utility-First CSS</p>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="420">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+          <h3>Python</h3>
+          <p>Programming Language</p>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="480">
+          <img src="figma-icon.png" alt="Figma" />
+          <h3>Figma</h3>
+          <p>UI/UX Design</p>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="540">
+          <img src="wordpress-icon.png" alt="WordPress" />
+          <h3>WordPress</h3>
+          <p>Content Management</p>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+          <img src="github-icon.png" alt="GitHub" />
+          <h3>GitHub</h3>
+          <p>Version Control</p>
+        </div>
+
+      </div>
     </section>
-    <script src="/portfolio.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="projects">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I've Built</span>
+        <h2>My Projects</h2>
+        <p>A collection of projects that showcase my skills and passion for development.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Yaad -->
+        <div class="project-card featured" data-aos="fade-up" data-aos-delay="0">
+          <div class="project-img">
+            <div class="project-placeholder">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/UmairJailani/yaad" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Yaad <span class="badge">NEW</span></h3>
+            <p>A full-featured React Native to-do app with task management and a beautiful UI, built using Expo for cross-platform mobile deployment.</p>
+            <div class="project-tags">
+              <span>React Native</span>
+              <span>Expo</span>
+              <span>TypeScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Calculator -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-img">
+            <img src="cal_img.png" alt="Calculator App" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://umairjailani.github.io/Calculator_Project/" target="_blank" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> Live
+                </a>
+                <a href="https://github.com/UmairJailani/Calculator_Project" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Calculator App</h3>
+            <p>A fully functional calculator with a clean UI and smooth operations built with HTML, CSS & JavaScript.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Drum Kit -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="project-img">
+            <img src="DrumKey.png" alt="Drum Kit" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://umairjailani.github.io/Drum-on-keys/" target="_blank" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> Live
+                </a>
+                <a href="https://github.com/UmairJailani/Drum-on-keys" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Drum Kit</h3>
+            <p>An interactive drum kit that plays sounds when keyboard keys are pressed, powered by JavaScript event listeners.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simon Game -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-img">
+            <img src="SimonGameSnap.png" alt="Simon Game" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://umairjailani.github.io/Simon-Game/" target="_blank" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> Live
+                </a>
+                <a href="https://github.com/UmairJailani/Simon-Game" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Simon Game</h3>
+            <p>A memory challenge game where players repeat patterns of lights and sounds with increasing difficulty.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- To-Do List -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="project-img">
+            <img src="todolist.png" alt="To-Do List" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://umairjailani.github.io/ToDoList-Project/" target="_blank" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> Live
+                </a>
+                <a href="https://github.com/UmairJailani/ToDoList-Project" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>To-Do List (Web)</h3>
+            <p>A task management web app with add, complete, and delete functionality to stay organized and productive.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Login Page -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-img">
+            <img src="loginsnap.png" alt="Login Page" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://umairjailani.github.io/Login_page/" target="_blank" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> Live
+                </a>
+                <a href="https://github.com/UmairJailani/Login_page" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Login Page</h3>
+            <p>A modern, responsive login and signup interface with a clean design and smooth form interactions.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me directly via email or connect with me on social media. I'd love to hear from you!</p>
+      </div>
+      <div class="contact-content">
+
+        <div class="contact-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:umairjailani47@gmail.com">umairjailani47@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item" data-aos="fade-up" data-aos-delay="150">
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <h4>Phone</h4>
+            <a href="tel:+923365993438">+92-336-5993438</a>
+          </div>
+        </div>
+
+        <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+          <div>
+            <h4>LinkedIn</h4>
+            <a href="https://www.linkedin.com/in/umairjailani" target="_blank">linkedin.com/in/umairjailani</a>
+          </div>
+        </div>
+
+        <div class="contact-item" data-aos="fade-up" data-aos-delay="250">
+          <div class="contact-icon"><i class="fab fa-github"></i></div>
+          <div>
+            <h4>GitHub</h4>
+            <a href="https://github.com/UmairJailani" target="_blank">github.com/UmairJailani</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <p>Designed & Built by <span>Muhammad Umair Jailani</span></p>
+        <div class="footer-socials">
+          <a href="https://github.com/UmairJailani" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/umairjailani" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:umairjailani47@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="footer-copy">© 2026 All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
