@@ -245,7 +245,9 @@
     .proj-link:hover { background: var(--blue); border-color: var(--blue); color: #fff; }
     .project-body { padding: 22px; flex: 1; display: flex; flex-direction: column; }
     .project-badge { display: inline-block; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 10px; border-radius: 99px; margin-bottom: 10px; }
-    .badge-web { background: rgba(6,182,212,0.1); color: var(--cyan); border: 1px solid rgba(6,182,212,0.25); }
+    .badge-web    { background: rgba(6,182,212,0.1);   color: var(--cyan);  border: 1px solid rgba(6,182,212,0.25); }
+    .badge-mobile { background: rgba(99,102,241,0.1);  color: var(--blue);  border: 1px solid rgba(99,102,241,0.25); }
+    .projects-loading { grid-column: 1/-1; display: flex; align-items: center; justify-content: center; padding: 4rem; color: var(--muted); font-size: 1.5rem; }
     .project-body h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
     .project-body p { font-size: 0.86rem; color: var(--muted); line-height: 1.6; flex: 1; }
     .project-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
@@ -748,111 +750,10 @@
       <div class="filter-tabs reveal reveal-delay-2">
         <button class="filter-btn active" data-filter="all">All Projects</button>
         <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
       </div>
       <div class="projects-grid" id="projectsGrid">
-
-        <div class="project-card reveal" data-category="web">
-          <div class="project-thumb">
-            <img src="https://umairjailani.github.io/Dice-Game/preview.png" alt="Dice Duel" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
-            <div class="project-thumb-placeholder web-bg" style="display:none;"><i class="fas fa-dice" style="color:var(--cyan);"></i></div>
-          </div>
-          <div class="project-overlay">
-            <a href="https://umairjailani.github.io/Dice-Game/" target="_blank" rel="noopener" class="proj-link"><i class="fas fa-external-link-alt"></i> Live</a>
-            <a href="https://github.com/UmairJailani/Dice-Game" target="_blank" rel="noopener" class="proj-link"><i class="fab fa-github"></i> Code</a>
-          </div>
-          <div class="project-body">
-            <span class="project-badge badge-web">Web App</span>
-            <h3>Dice Duel</h3>
-            <p>2-player dice game with custom names, target score, round tracking, and a full win screen with confetti.</p>
-            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          </div>
-        </div>
-
-        <div class="project-card reveal" data-category="web">
-          <div class="project-thumb">
-            <img src="cal_img.png" alt="Calculator App" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
-            <div class="project-thumb-placeholder web-bg" style="display:none;"><i class="fas fa-calculator" style="color:var(--cyan);"></i></div>
-          </div>
-          <div class="project-overlay">
-            <a href="https://umairjailani.github.io/Calculator_Project/" target="_blank" rel="noopener" class="proj-link"><i class="fas fa-external-link-alt"></i> Live</a>
-            <a href="https://github.com/UmairJailani/Calculator_Project" target="_blank" rel="noopener" class="proj-link"><i class="fab fa-github"></i> Code</a>
-          </div>
-          <div class="project-body">
-            <span class="project-badge badge-web">Web App</span>
-            <h3>Calculator App</h3>
-            <p>A fully functional calculator with a clean UI and smooth arithmetic operations built in vanilla JavaScript.</p>
-            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          </div>
-        </div>
-
-        <div class="project-card reveal reveal-delay-1" data-category="web">
-          <div class="project-thumb">
-            <img src="SimonGameSnap.png" alt="Simon Game" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
-            <div class="project-thumb-placeholder web-bg" style="display:none;"><i class="fas fa-gamepad" style="color:var(--cyan);"></i></div>
-          </div>
-          <div class="project-overlay">
-            <a href="https://umairjailani.github.io/Simon-Game/" target="_blank" rel="noopener" class="proj-link"><i class="fas fa-external-link-alt"></i> Live</a>
-            <a href="https://github.com/UmairJailani/Simon-Game" target="_blank" rel="noopener" class="proj-link"><i class="fab fa-github"></i> Code</a>
-          </div>
-          <div class="project-body">
-            <span class="project-badge badge-web">Web App</span>
-            <h3>Simon Game</h3>
-            <p>Full browser memory game with progressive difficulty, sound, animations, and game-over logic.</p>
-            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          </div>
-        </div>
-
-        <div class="project-card reveal reveal-delay-2" data-category="web">
-          <div class="project-thumb">
-            <img src="DrumKey.png" alt="Drum Machine" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
-            <div class="project-thumb-placeholder web-bg" style="display:none;"><i class="fas fa-drum" style="color:var(--cyan);"></i></div>
-          </div>
-          <div class="project-overlay">
-            <a href="https://umairjailani.github.io/Drum-on-keys/" target="_blank" rel="noopener" class="proj-link"><i class="fas fa-external-link-alt"></i> Live</a>
-            <a href="https://github.com/UmairJailani/Drum-on-keys" target="_blank" rel="noopener" class="proj-link"><i class="fab fa-github"></i> Code</a>
-          </div>
-          <div class="project-body">
-            <span class="project-badge badge-web">Web App</span>
-            <h3>Drum Machine</h3>
-            <p>Keyboard-triggered drum pad using JS event listeners and Web Audio API for real-time sound playback.</p>
-            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          </div>
-        </div>
-
-        <div class="project-card reveal reveal-delay-1" data-category="web">
-          <div class="project-thumb">
-            <img src="todolist.png" alt="To-Do List" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
-            <div class="project-thumb-placeholder web-bg" style="display:none;"><i class="fas fa-tasks" style="color:var(--cyan);"></i></div>
-          </div>
-          <div class="project-overlay">
-            <a href="https://umairjailani.github.io/ToDoList-Project/" target="_blank" rel="noopener" class="proj-link"><i class="fas fa-external-link-alt"></i> Live</a>
-            <a href="https://github.com/UmairJailani/ToDoList-Project" target="_blank" rel="noopener" class="proj-link"><i class="fab fa-github"></i> Code</a>
-          </div>
-          <div class="project-body">
-            <span class="project-badge badge-web">Web App</span>
-            <h3>To-Do List App</h3>
-            <p>Task manager with add, complete, and delete — clean persistent UI built without any frameworks.</p>
-            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          </div>
-        </div>
-
-        <div class="project-card reveal reveal-delay-2" data-category="web">
-          <div class="project-thumb">
-            <img src="loginsnap.png" alt="Login Page" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
-            <div class="project-thumb-placeholder web-bg" style="display:none;"><i class="fas fa-sign-in-alt" style="color:var(--cyan);"></i></div>
-          </div>
-          <div class="project-overlay">
-            <a href="https://umairjailani.github.io/Login_page/" target="_blank" rel="noopener" class="proj-link"><i class="fas fa-external-link-alt"></i> Live</a>
-            <a href="https://github.com/UmairJailani/Login_page" target="_blank" rel="noopener" class="proj-link"><i class="fab fa-github"></i> Code</a>
-          </div>
-          <div class="project-body">
-            <span class="project-badge badge-web">Web App</span>
-            <h3>Login Page UI</h3>
-            <p>Responsive login and signup form with client-side validation and clean CSS styling.</p>
-            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          </div>
-        </div>
-
+        <div class="projects-loading"><i class="fas fa-spinner fa-spin"></i></div>
       </div>
     </div>
   </section>
@@ -982,7 +883,7 @@
     window.addEventListener('load', () => {
       setTimeout(() => {
         document.getElementById('loader').classList.add('hidden');
-        initReveal(); animateStats(); animateSkillBars();
+        loadProjects(); animateStats(); animateSkillBars();
       }, 1600);
     });
 
@@ -1034,6 +935,77 @@
       strings: ['Front-End Developer.','Ops &amp; Admin Professional.','Self-Taught Developer.','Python Developer.','AI-Powered Builder.','Problem Solver.'],
       typeSpeed: 58, backSpeed: 32, backDelay: 1800, loop: true
     });
+
+    /* DYNAMIC PROJECTS */
+    const PINNED = [
+      {
+        name: 'Yaad',
+        description: 'Full-featured to-do and task manager mobile app built with React Native and Expo. Available on Android.',
+        html_url: 'https://github.com/UmairJailani/yaad',
+        homepage: null,
+        topics: ['react-native', 'expo', 'typescript'],
+        category: 'mobile',
+        badge: 'Mobile App',
+        badgeClass: 'badge-mobile',
+        icon: 'fa-mobile-alt',
+        iconColor: 'var(--blue)'
+      }
+    ];
+
+    function formatProjectName(name) {
+      const overrides = { 'Dice-Game': 'Dice Duel', 'ToDoList-Project': 'To-Do List App', 'Login_page': 'Login Page UI', 'Drum-on-keys': 'Drum Machine', 'Calculator_Project': 'Calculator App' };
+      return overrides[name] || name.replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    }
+
+    function buildCard(p) {
+      const preview = p.preview ? `<img src="${p.preview}" alt="${p.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>` : '';
+      const liveBtn = p.homepage ? `<a href="${p.homepage}" target="_blank" rel="noopener" class="proj-link"><i class="fas fa-external-link-alt"></i> Live</a>` : '';
+      const tags = (p.topics || []).slice(0, 4).map(t => `<span>${t}</span>`).join('');
+      return `
+        <div class="project-card reveal" data-category="${p.category}">
+          <div class="project-thumb">
+            ${preview}
+            <div class="project-thumb-placeholder web-bg" style="${p.preview ? 'display:none;' : ''}"><i class="fas ${p.icon}" style="color:${p.iconColor};font-size:3.5rem;opacity:0.2;"></i></div>
+          </div>
+          <div class="project-overlay">${liveBtn}<a href="${p.html_url}" target="_blank" rel="noopener" class="proj-link"><i class="fab fa-github"></i> Code</a></div>
+          <div class="project-body">
+            <span class="project-badge ${p.badgeClass}">${p.badge}</span>
+            <h3>${formatProjectName(p.name)}</h3>
+            <p>${p.description || 'No description yet.'}</p>
+            <div class="project-tags">${tags}</div>
+          </div>
+        </div>`;
+    }
+
+    async function loadProjects() {
+      const grid = document.getElementById('projectsGrid');
+      try {
+        const res = await fetch('https://api.github.com/users/UmairJailani/repos?per_page=100&sort=pushed');
+        const repos = await res.json();
+        const ghProjects = repos
+          .filter(r => Array.isArray(r.topics) && r.topics.includes('portfolio-project'))
+          .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
+          .map(r => ({
+            name: r.name,
+            description: r.description || '',
+            html_url: r.html_url,
+            homepage: r.homepage || null,
+            topics: r.topics.filter(t => t !== 'portfolio-project'),
+            category: 'web',
+            badge: 'Web App',
+            badgeClass: 'badge-web',
+            preview: `https://raw.githubusercontent.com/UmairJailani/${r.name}/main/preview.png`,
+            icon: 'fa-code',
+            iconColor: 'var(--cyan)'
+          }));
+
+        const all = [...PINNED, ...ghProjects];
+        grid.innerHTML = all.map(buildCard).join('');
+      } catch {
+        grid.innerHTML = '<p style="color:var(--muted);text-align:center;padding:2rem;grid-column:1/-1;">Could not load projects — <a href="https://github.com/UmairJailani" target="_blank" style="color:var(--cyan);">view on GitHub →</a></p>';
+      }
+      initReveal();
+    }
 
     /* REVEAL */
     function initReveal() {
