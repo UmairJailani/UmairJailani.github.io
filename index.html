@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="Umair Jailani — IT Coordinator & Developer" />
-  <meta property="og:description" content="Self-taught developer and operations professional from Islamabad. 7+ years government experience. Frontend dev, Python in training, AI-augmented workflows." />
+  <meta property="og:title" content="Umair Jailani — Operations Professional & AI-Assisted Builder" />
+  <meta property="og:description" content="Operations professional from Islamabad with 7+ years of government experience, building web and mobile apps with AI tools." />
   <meta property="og:image" content="https://umairjailani.github.io/og_portfolio.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -12,7 +12,7 @@
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://umairjailani.github.io/og_portfolio.png" />
-  <title>Umair Jailani — Ops Professional & Self-Taught Developer</title>
+  <title>Umair Jailani — Operations Professional & AI-Assisted Builder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -33,7 +33,7 @@
       --transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
     }
     html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); overflow-x: hidden; cursor: none; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); overflow-x: hidden; }
     h1,h2,h3,h4 { font-family: 'Space Grotesk', sans-serif; }
     a { text-decoration: none; color: inherit; }
     img { max-width: 100%; display: block; }
@@ -46,12 +46,12 @@
     #loader.hidden { opacity: 0; visibility: hidden; }
     .loader-logo { font-family: 'Space Grotesk', sans-serif; font-size: 3rem; font-weight: 800; background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: pulse 1s ease infinite; }
     .loader-bar { width: 200px; height: 3px; background: var(--border); border-radius: 99px; overflow: hidden; }
-    .loader-fill { height: 100%; background: var(--grad); border-radius: 99px; animation: loadFill 1.5s ease forwards; }
+    .loader-fill { height: 100%; background: var(--grad); border-radius: 99px; animation: loadFill 0.3s ease forwards; }
     @keyframes loadFill { from { width: 0; } to { width: 100%; } }
     @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.5; } }
 
     /* CURSOR */
-    #cursor-dot, #cursor-ring { position: fixed; pointer-events: none; z-index: 9998; border-radius: 50%; transform: translate(-50%,-50%); transition-timing-function: cubic-bezier(0.4,0,0.2,1); }
+    #cursor-dot, #cursor-ring { display: none; position: fixed; pointer-events: none; z-index: 9998; border-radius: 50%; transform: translate(-50%,-50%); transition-timing-function: cubic-bezier(0.4,0,0.2,1); }
     #cursor-dot { width: 8px; height: 8px; background: var(--blue); transition-duration: 0.05s; transition-property: transform, background, width, height; }
     #cursor-ring { width: 36px; height: 36px; border: 2px solid var(--blue); opacity: 0.5; transition-duration: 0.15s; transition-property: transform, border-color, width, height; }
     body.cursor-hover #cursor-dot { width: 12px; height: 12px; background: var(--purple); }
@@ -397,7 +397,7 @@
         <p class="hero-subtitle reveal reveal-delay-2">I'm a <span id="typed"></span></p>
         <p class="hero-desc reveal reveal-delay-3">
           Operations &amp; admin professional with <strong>7+ years</strong> of government-level experience —
-          now a self-taught front-end developer holding <strong>Google</strong> and <strong>META</strong> certifications.
+          now building web and mobile apps with AI tools, backed by <strong>Google</strong> and <strong>META</strong> certifications.
           I bring discipline, ownership, and real-world problem-solving to every project I build.
         </p>
         <div class="hero-btns reveal reveal-delay-4">
@@ -423,7 +423,7 @@
                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
             <div class="hero-img-fallback" style="display:none;">UJ</div>
           </div>
-          <div class="float-badge badge-python" aria-hidden="true"><i class="fab fa-python"></i> Python Developer</div>
+          <div class="float-badge badge-python" aria-hidden="true"><i class="fab fa-python"></i> Python</div>
           <div class="float-badge badge-js" aria-hidden="true"><i class="fab fa-js-square"></i> JavaScript</div>
           <div class="float-badge badge-ai" aria-hidden="true"><i class="fas fa-robot"></i> AI-Powered</div>
         </div>
@@ -438,7 +438,7 @@
         <div class="about-text">
           <div class="section-tag reveal">Who I Am</div>
           <h2 class="reveal reveal-delay-1">
-            Self-taught. Battle-tested.<br/><span class="gradient-text">Always delivering.</span>
+            Ops-trained. Battle-tested.<br/><span class="gradient-text">Always delivering.</span>
           </h2>
           <p class="reveal reveal-delay-2">
             I'm <strong>Umair Jailani</strong> — an operations and admin professional from <strong>Islamabad, Pakistan</strong>
@@ -446,15 +446,14 @@
             drafting legal case findings, conducting formal hearings, and managing thousands of active case files.
           </p>
           <p class="reveal reveal-delay-3">
-            Matric-qualified but entirely <strong>self-taught beyond that</strong> — I earned a <strong>Google Project Management
-            Certificate</strong> and a <strong>META Front-End Development Certificate</strong> through independent study,
-            and I'm actively training in Python. I build with code the same way I worked in government:
-            with full ownership and zero shortcuts.
+            Through independent study I earned a <strong>Google Project Management Certificate</strong> and a
+            <strong>META Front-End Development Certificate</strong>, and I'm actively training in Python. I build apps with
+            AI coding tools, and I own the parts that matter: deciding what to build, testing it properly and shipping it safely.
           </p>
           <div class="about-highlights reveal reveal-delay-3">
             <div class="about-hl"><i class="fas fa-map-marker-alt"></i><div>Based in <span>Islamabad, Pakistan</span></div></div>
             <div class="about-hl"><i class="fas fa-briefcase"></i><div><span>7+ years</span> government operations experience</div></div>
-            <div class="about-hl"><i class="fas fa-code"></i><div>Self-taught <span>Front-End Developer</span></div></div>
+            <div class="about-hl"><i class="fas fa-code"></i><div>Builds web &amp; mobile apps <span>with AI tools</span></div></div>
             <div class="about-hl"><i class="fas fa-robot"></i><div>Active user of <span>AI-assisted workflows</span></div></div>
             <div class="about-hl"><i class="fas fa-language"></i><div>English · Urdu · <span>Japanese (learning)</span></div></div>
           </div>
@@ -884,7 +883,7 @@
       setTimeout(() => {
         document.getElementById('loader').classList.add('hidden');
         loadProjects(); animateStats(); animateSkillBars();
-      }, 1600);
+      }, 150);
     });
 
     /* CURSOR */
@@ -932,7 +931,7 @@
 
     /* TYPED.JS */
     new Typed('#typed', {
-      strings: ['Front-End Developer.','Ops &amp; Admin Professional.','Self-Taught Developer.','Python Developer.','AI-Powered Builder.','Problem Solver.'],
+      strings: ['Operations Professional.','AI-Powered Builder.','Front-End Developer.','Problem Solver.'],
       typeSpeed: 58, backSpeed: 32, backDelay: 1800, loop: true
     });
 
@@ -940,10 +939,10 @@
     const PINNED = [
       {
         name: 'Yaad',
-        description: 'Full-featured to-do and task manager mobile app built with React Native and Expo. Available on Android.',
-        html_url: 'https://github.com/UmairJailani/yaad',
+        description: 'Shared lists and team management app for home and work. Android, React Native, Expo and Firebase. Completed Google Play closed testing.',
+        html_url: 'https://github.com/UmairJailani/yaad-showcase',
         homepage: null,
-        topics: ['react-native', 'expo', 'typescript'],
+        topics: ['react-native', 'expo', 'firebase', 'typescript'],
         category: 'mobile',
         badge: 'Mobile App',
         badgeClass: 'badge-mobile',
@@ -983,7 +982,7 @@
         const res = await fetch('https://api.github.com/users/UmairJailani/repos?per_page=100&sort=pushed');
         const repos = await res.json();
         const ghProjects = repos
-          .filter(r => Array.isArray(r.topics) && r.topics.includes('portfolio-project'))
+          .filter(r => r.name !== 'yaad-showcase' && Array.isArray(r.topics) && r.topics.includes('portfolio-project'))
           .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
           .map(r => ({
             name: r.name,
