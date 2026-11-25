@@ -948,6 +948,18 @@
         badgeClass: 'badge-mobile',
         icon: 'fa-mobile-alt',
         iconColor: 'var(--blue)'
+      },
+      {
+        name: 'Second Brain',
+        description: 'How I run my work with AI agents: a private knowledge base Claude Code and Codex share, published hourly through a privacy filter.',
+        html_url: 'https://github.com/UmairJailani/second-brain-showcase',
+        homepage: null,
+        topics: ['claude-code', 'codex', 'obsidian', 'automation'],
+        category: 'web',
+        badge: 'AI Workflow',
+        badgeClass: 'badge-mobile',
+        icon: 'fa-brain',
+        iconColor: 'var(--purple)'
       }
     ];
 
@@ -982,7 +994,7 @@
         const res = await fetch('https://api.github.com/users/UmairJailani/repos?per_page=100&sort=pushed');
         const repos = await res.json();
         const ghProjects = repos
-          .filter(r => r.name !== 'yaad-showcase' && Array.isArray(r.topics) && r.topics.includes('portfolio-project'))
+          .filter(r => !['yaad-showcase','second-brain-showcase'].includes(r.name) && Array.isArray(r.topics) && r.topics.includes('portfolio-project'))
           .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
           .map(r => ({
             name: r.name,
