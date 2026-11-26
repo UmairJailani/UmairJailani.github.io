@@ -938,6 +938,19 @@
     /* DYNAMIC PROJECTS */
     const PINNED = [
       {
+        name: 'Case Desk',
+        description: 'My old job turned into a tool: case register, hearing diary, one-click official letters and a monthly report that counts itself. Built from 7 years of complaint-case work.',
+        html_url: 'https://github.com/UmairJailani/case-desk',
+        homepage: 'https://umairjailani.github.io/case-desk/',
+        preview: 'casedesk.png',
+        topics: ['react', 'typescript', 'indexeddb', 'office-tools'],
+        category: 'web',
+        badge: 'Office Tool',
+        badgeClass: 'badge-mobile',
+        icon: 'fa-folder-open',
+        iconColor: 'var(--teal, #2dd4bf)'
+      },
+      {
         name: 'Yaad',
         description: 'Shared lists and team management app for home and work. Android, React Native, Expo and Firebase. Completed Google Play closed testing.',
         html_url: 'https://github.com/UmairJailani/yaad-showcase',
@@ -994,7 +1007,7 @@
         const res = await fetch('https://api.github.com/users/UmairJailani/repos?per_page=100&sort=pushed');
         const repos = await res.json();
         const ghProjects = repos
-          .filter(r => !['yaad-showcase','second-brain-showcase'].includes(r.name) && Array.isArray(r.topics) && r.topics.includes('portfolio-project'))
+          .filter(r => !['yaad-showcase','second-brain-showcase','case-desk'].includes(r.name) && Array.isArray(r.topics) && r.topics.includes('portfolio-project'))
           .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
           .map(r => ({
             name: r.name,
